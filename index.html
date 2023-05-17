@@ -12,11 +12,11 @@
     <meta name="generator" content="Jekyll v3.9.2">
     <meta property="og:title" content="The first shared-task in multimodal argument mining ">
     <meta property="og:locale" content="en_US">
-    <meta name="description" content="Shared task predicting validity and novelty">
-    <meta property="og:description" content="Shared task predicting validity and novelty">
-    <link rel="canonical" href="https://phhei.github.io/ArgsValidNovel/">
-    <meta property="og:url" content="https://phhei.github.io/ArgsValidNovel/">
-    <meta property="og:site_name" content="ArgMining22-Shared-Task">
+    <meta name="description" content="The first shared-task in multimodal argument mining">
+    <meta property="og:description" content="The first shared-task in multimodal argument mining">
+    <link rel="canonical" href="https://imagearg.github.io/">
+    <meta property="og:url" content="https://imagearg.github.io/">
+    <meta property="og:site_name" content="https://imagearg.github.io/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
     <meta property="twitter:title" content="The first shared-task in multimodal argument mining ">
@@ -24,10 +24,10 @@
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "description": "Shared task predicting validity and novelty",
+            "description": "ImageArg Shared Task",
             "headline": "The first shared-task in multimodal argument mining",
-            "name": "ArgMining22-Shared-Task",
-            "url": "https://phhei.github.io/ArgsValidNovel/"
+            "name": "ImageArg Shared Task",
+            "url": "https://imagearg.github.io/"
         }</script>
     <!-- End Jekyll SEO tag -->
 
@@ -81,7 +81,7 @@
 <body>
 <div class="wrapper">
     <header>
-        <h1><a href="https://github.com/ImageArg/ImageArg-Shared-Task">ImageArg-Shared-Task-2023</a></h1>
+        <h1><a href="https://imagearg.github.io/">ImageArg-Shared-Task-2023</a></h1>
 
 
         <p>Co-located with <a href="https://argmining-org.github.io/2023/">The 10th ArgMining Workshop</a></a> at <a
@@ -102,39 +102,38 @@
             persuasiveness in natural language applications. However, these efforts have mainly focused on the textual
             modality, neglecting the influence of other modalities. <a
                     href="https://aclanthology.org/2022.argmining-1.1.pdf">Liu et al.</a> introduced a new multimodal
-            dataset called <strong> “ImageArg” </strong> This dataset includes persuasive tweets along with associated
+            dataset called <strong> ImageArg </strong> This dataset includes persuasive tweets along with associated
             images, aiming to identify the image's stance towards the tweet and determine its persuasiveness score
             concerning a specific topic. The ImageArg dataset is a significant step towards advancing multimodal
             persuasive text analysis and opens up avenues for exploring the persuasive impact of images in social media.
             To further this goal, we designed this shared task, which utilizes the ImageArg dataset to advance
             multimodal persuasiveness techniques.</p>
 
-        <p>Participants are welcome to submit system description papers for the shared task. Submitted papers will be
-            peer-reviewed. Accepted papers will be published in the proceeding of <a
+        <p>Participants are welcome to submit system description papers for the shared task. Accepted papers will be
+            published in the proceeding of <a
                     href="https://argmining-org.github.io/2023/">The 10th ArgMining Workshop</a>.</p>
 
         <p>To participate in this competition, please fill in this <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSci3TSw6ylcWnjXQsoUjh3buAQx7IdgiJwrJDR2pDHMm8DIpQ/viewform?usp=pp_url">registration
-            form.</a>
+            form.</a> Please feel free to join <a
+                href="https://join.slack.com/t/imagearg/shared_invite/zt-1ss5hdb6d-eNCaWOAEe4O_8UE1gQxIxA">ImageArg
+            Slack</a> for conversations.</p>
         </p>
 
 
         <hr>
 
-        <h2 id="dataset"> The ImageArg Dataset </h2>
+        <h2 id="dataset"> 1. The ImageArg Shared Task </h2>
 
 
-        The <strong> ImageArg </strong> dataset is composed of tweets (images and text) from controversial topics,
-        namely <strong> gun
-        control </strong> and <strong> abortion </strong>. The the dataset
-        contains 2-dimensions of
-        annotations: Argumentative Stance <strong>(AS)</strong>, Image Persuasiveness <strong> (IP) </strong>, of which
-        each dimension addresses a unique research question: 1) <strong> AS </strong>: does the tweet have an
+        The ImageArg dataset is composed of tweets (images and text) from controversial topics,
+        namely <strong> gun control </strong> and <strong> abortion </strong>. The the dataset
+        contains 2-dimensions of annotations: Argumentative Stance (AS), Image Persuasiveness (IP), of which
+        each dimension addresses a unique research question: <strong> 1)</strong> AS: does the tweet have an
         argumentative
-        stance? 2) <strong> IP </strong>: does the tweet image make the tweet more persuasive?<p></p>
-        <h2 id="tasks">Tasks</h2>
+        stance? <strong> 2)</strong> IP: does the tweet image make the tweet more persuasive?<p></p>
 
-        <p>We divide the ImageArg Shared Task into two subtasks. Participants can choose Task A or Task B, or both.</p>
+        <p>ImageArg Shared Task is divided into two subtasks. Participants can choose Task A or Task B, or both.</p>
 
 
         <h3 id="subtask-a-binary-novelty-validity-classification">Subtask A: Argumentative Stance (AS)
@@ -174,54 +173,92 @@
             show the statistics of the murder
             rate in major U.S. cities due to restrict gun control laws, so citizens cannot easily arm themselves.</p>
 
-        <p>Please read details about AS and IP in the <a href="https://aclanthology.org/2022.argmining-1.1.pdf">paper</a> if you
+        <p>Please read details about AS and IP in the <a
+                href="https://aclanthology.org/2022.argmining-1.1.pdf">paper</a> if you
             are interested.</p>
 
-        <h2 id="scripts to download the data"> Scripts to Download the Dataset</h2>
+        <hr>
+        <h2 id="scripts to download the data"> 2. Dataset and Shared Task Submission</h2>
         <p>The dataset to download should only be used for participating in the ImageArg Shared Task. Any
-            other use is explicitly prohibited. Participants are not allowed to redistribute the dataset per <a href="https://developer.twitter.com/en/developer-terms/policy">Twitter
-            Developer Policy</a>.</p>
+            other use is explicitly prohibited. Participants are not allowed to redistribute the dataset per <a
+                    href="https://developer.twitter.com/en/developer-terms/policy">Twitter
+                Developer Policy</a>.</p>
 
-           <p> All the tweets are instantly crawled from Twitter. We are aware some tweets could not be available when
-            participants start to download (e.g., a tweet could be deleted by its author). We will regularly monitor the
-            dataset to provide data patches that will replace invalid tweets with new annotations. Participants are required to fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSci3TSw6ylcWnjXQsoUjh3buAQx7IdgiJwrJDR2pDHMm8DIpQ/viewform">Google
+        <p> All the tweets are instantly crawled from Twitter. Organizers are aware some tweets could not be available
+            when
+            participants start to download (e.g., a tweet could be deleted by its author). Organizers will regularly
+            monitor the
+            dataset to provide data patches that will replace invalid tweets with new annotations. Participants are
+            required to fill out the <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSci3TSw6ylcWnjXQsoUjh3buAQx7IdgiJwrJDR2pDHMm8DIpQ/viewform">Google
                 Form</a> in order to receive data patches and the shared task updates.</p>
 
         <p>Participants are allowed to extend only the training set with further (synthetic) samples. However, if do
-                        that, participants have to describe and the algorithm which extends the training set in the system description paper submission. This algorithm
-                        must be automatically executable without any human interaction (hence, without further manual
-                        annotation or manual user feedback).</p>
-        <ul>
-            <li>Train and dev data script: <a href="https://github.com/ImageArg/ImageArg-Shared-Task">Here</a></li>
-<!--            <li>Dev script: <a href="to be added">TBA</a></li>-->
-            <!-- <ul>
-            <li>you need to download the training and development data before  <strong>10th of May 2023</strong></li>
-            </ul> -->
-            <li>Test data script: <a href="">TBA</a></li>
-        </ul>
+            that, participants have to describe and the algorithm which extends the training set in the system
+            description paper submission. This algorithm
+            must be automatically executable without any human interaction (hence, without further manual
+            annotation or manual user feedback).</p>
 
-        <p><strong>Evaluation:</strong> <strong> F1-score </strong> and <strong> AUC </strong> of participating teams
-            will be reported.</p>
+        <p><strong>Shared Task Evaluation:</strong> <strong> F1-score </strong> of participating teams
+            will be used for ranking, but participants are free to include other metrics (e.g., AUC) in system
+            description paper submissions. </p>
 
 
-        <h3 id="timeline">Timeline</h3>
+        <p><strong>Shared Task Submission:</strong> There are up to 5 submissions from different approaches (systems) allowed per team and per
+                        subtask. Participants are allowed to withdraw your submission at anytime until the final
+            deadline by contacting the organizers. </p>
 
         <ul>
-            <li>05.15.23: Training and Dev scripts released for both subtasks</li>
-            <li>07.07.23: Registration closed and Test scripts released for both subtasks</li>
-            <li>07.21.23: Test submission deadline.</li>
-            <li>08.1.23: Fnal learderboard announcement for both tasks</li>
-            <li>09.1.23: Workshop Paper Due Date</li>
-            <li>10.7.23: Notification of Acceptance</li>
-            <li>10.18.23: Camera-ready papers due</li>
-            <li>12.10.23: Workshop Dates</li>
+            <li>Train and dev data download: <a href="https://github.com/ImageArg/ImageArg-Shared-Task">Here</a></li>
+            <li>Test data (without labels) download: <a href="">TBA</a></li>
+            <li>Evaluation script: <a href="">TBA</a></li>
+            <li>Shared Task Submission: <a href="">TBA</a></li>
         </ul>
 
-        <h3 id="system-description-paper-submission">System Description Paper Submission</h3>
 
-        <p>Please finde more info <a href="https://argmining-org.github.io/2023/">here</a></p>
+        <hr>
 
-        <h3 id="terms-and-conditions">Terms and Conditions</h3>
+        <h2 id="system-description-paper-submission">3. Call for Papers (System Description Papers)</h2>
+
+        <p>
+            The shared task of the ArgMining 2022 invites the submission of system description short papers from teams
+            that have participated. Accepted papers will be published in the proceeding of <a
+                href="https://argmining-org.github.io/2023/">The 10th ArgMining Workshop</a>.
+
+        </p>
+
+<!--        <h3 id="system-description-paper-submission-information">Paper Submission Information</h3>-->
+        <p>By default, we accept only short papers (at most 4 pages, including references and optional appendix). All
+            papers will be treated equally in the workshop proceedings. Moreover, authors are expected to adhere to the
+            ethical code set out in the ACL Code of Ethics. Submissions that violate any of the policies will be
+            rejected without review.
+
+        <p>Please use the <a href="https://2023.emnlp.org/calls/style-and-formatting/">EMNLP 2023 style sheets</a> for
+        formatting your paper. </p>
+
+        <p><strong>Paper Submission:</strong> address is to be announced.</p>
+
+        <!--Please use the CAMERA-READY, non-anonymized option.-->
+
+<!--        <h3 id="paper-guidance">Suggested Paper Structure</h3>-->
+
+
+
+        <hr>
+        <h2 id="timeline">4. Timeline</h2>
+<!--        The timeline for shared task and system description paper submissions.-->
+        <ul>
+            <li>05/15/23: Training and Dev scripts released for both subtasks</li>
+            <li>07/07/23: Registration closed and Test scripts released for both subtasks</li>
+            <li>07/21/23: Test submission deadline.</li>
+            <li>08/01/23: Leaderboard announcement for both tasks</li>
+            <li>09/01/23: System Description Paper Due</li>
+            <li>10/02/23: Notification of Paper Acceptance</li>
+            <li>10/09/23: Camera-ready papers due</li>
+            <li>12/10/23: Workshop Dates</li>
+        </ul>
+        <hr>
+        <h2 id="terms-and-conditions">5. Terms and Conditions</h2>
 
         <p>By participating in this task you agree to these terms and conditions. If, however, one or more of these
             conditions is a concern for you, email us, and we will consider if an exception can be made.</p>
@@ -241,11 +278,6 @@
             <li>A participant can be involved in one team. Participating in more than one team is not recommended, but
                 not forbidden (if the person does not apply the same approach in different teams)
                 <ul>
-                    <li>There are up to 5 submissions from different approaches (systems) allowed per team and per
-                        subtask. <a href="not available">The submission must be uploaded here (available on test
-                            release)</a>. You are allowed to withdraw your submission at anytime until the final
-                        deadline by contacting the organizers.
-                    </li>
                     <li>You must not use any data from the development split as training instances. You must not use any
                         test instance in the training of the model (also not indirectly for model selection). Approaches
                         that violate this data separation are disqualified.
@@ -279,15 +311,13 @@
             </li>
         </ul>
 
+        <hr>
+        <h2 id="task-organizers">6. Shared Task Organizers</h2>
 
-        <h2 id="task-organizers">Task Organizers</h2>
-
-        <p>Join slack: <a href="https://join.slack.com/t/imagearg/shared_invite/zt-1ss5hdb6d-eNCaWOAEe4O_8UE1gQxIxA">ImageArg
-            slack</a></p>
 
         <ul>
-            <li><strong> University of Pittsburgh </strong>
-                <ul>
+
+<!--                <ul>-->
                     <li><a href="https://people.cs.pitt.edu/~zhexiong/">Zheixong Liu</a>, Ph.D. Student of Computer
                         Science
                     </li>
@@ -297,8 +327,8 @@
                     <li><a href="https://people.cs.pitt.edu/~litman/">Diane Litman</a>, Professor of Computer Science
                     </li>
                     <li><strong>Contact</strong> imagearg [at] gmail.com</li>
-                </ul>
-            </li>
+<!--                </ul>-->
+            <li><strong>Affiliation</strong> University of Pittsburgh </li>
         </ul>
 
 
@@ -306,8 +336,8 @@
     <footer>
 
         <p>This project is maintained by <a href="https://github.com/ImageArg">ImageArg</a></p>
-        <p>This website is developed based on <a href="https://phhei.github.io/ArgsValidNovel/">last year shared
-            task</a></p>
+        <p>This website is developed based on and partially reusing <a href="https://phhei.github.io/ArgsValidNovel/">ArgMining22-Shared-Task
+            </a></p>
         <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
 
     </footer>
