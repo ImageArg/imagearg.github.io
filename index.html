@@ -76,7 +76,13 @@
             font-family: circular;
 
             src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Black.woff2') format('woff2');
-        }</style>
+        }
+    th, td {
+        /*border: 1px solid #ddd;*/
+        padding: 3.5px;
+        /*text-align: center;*/
+        }
+    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -89,6 +95,7 @@
         <p class="view"><a href="https://github.com/ImageArg/ImageArg-Shared-Task">View Project Code on GitHub
             <small>ImageArg/ImageArg-Shared-Task</small></a></p>
         <p class="view"><a style="color: red">Important Announcement:</a><br>
+            <b>[08/01]</b> Shared task leaderboard is out! <br>
             <b>[07/19]</b> The submission (predicted results) deadline is extended to 07/26 (AoE). <br>
             <b>[07/17]</b> The task submission (predicted results) portal is open <a href="https://docs.google.com/forms/d/e/1FAIpQLScT-JU8FHu1Eoa1Eq1XzCfg9HBvFdoutxXL5lMTI6NnKTt6yg/viewform">here</a>.<br>
 <!--            <b>[07/12]</b> The submission portal and evaluation script will be out by 7/16 as we received a large number of registrations that need us to refine the submission procedure. Thanks for your patience! <br>-->
@@ -145,7 +152,9 @@
         stance? 2) IP: does the tweet image make the tweet more persuasive?<p></p>
 
         <p>ImageArg Shared Task is divided into two subtasks. Participants can choose Task A or Task B, or both. Please
-            be aware that some tweet content may be upsetting or triggering.</p>
+            be aware that some tweet content may be upsetting or triggering. Please read details about AS and IP in the <a
+                href="https://aclanthology.org/2022.argmining-1.1.pdf">paper</a> if you
+            are interested.</p>
 
 
         <h3 id="subtask-a-binary-novelty-validity-classification">Subtask A: Argumentative Stance (AS)
@@ -167,6 +176,85 @@
         <!-- <blockquote>
           <p>If you use the data, please cite our <a href="https://aclanthology.org/">overview paper</a> and the <a href="https://aclanthology.org/">ImageArg paper</a> </p>
         </blockquote> -->
+        <h4>Subtask A (AS Classification) Leaderboard</h4>
+        <table>
+    <thead>
+        <tr>
+            <th>Rank</th>
+        <th>Team Name</th>
+        <th>Affiliation</th>
+        <th>Attempt</th>
+        <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+      <td>1</td>
+      <td>KnowComp</td>
+      <td>The Hong Kong University of Science and Technology</td>
+      <td>4</td>
+      <td>0.8647</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Semantists</td>
+      <td>Institute for Infocomm Research, A*STAR</td>
+        <td>4</td>
+      <td>0.8506</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mohammad Soltani</td>
+      <td>Heinrich Heine University</td>
+      <td>2</td>
+      <td>0.8273</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Pitt Pixel Persuaders</td>
+      <td>University of Pittsburgh</td>
+      <td>2</td>
+      <td>0.8168</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>GC-HUNTER</td>
+      <td>Graduate Center, Hunter College, CUNY</td>
+      <td>2</td>
+      <td>0.8049</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>IUST</td>
+      <td>Iran University of Science and Technology</td>
+      <td>1</td>
+      <td>0.7754</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>KPAS</td>
+      <td>Optum</td>
+      <td>1</td>
+      <td>0.7097</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>ACT-CS</td>
+      <td>Emory University</td>
+      <td>4</td>
+      <td>0.6325</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>feeds</td>
+      <td>Bauhaus-Universität Weimar</td>
+      <td>1</td>
+      <td>0.4418</td>
+    </tr>
+
+    </table>
+        Note: Attempt denotes the best submission attempt; Score denotes F1-score.
+
         <p></p>
 
 
@@ -185,10 +273,85 @@
             show the statistics of the murder
             rate in major U.S. cities due to restrict gun control laws, so citizens cannot easily arm themselves.</p>
 
-        <p>Please read details about AS and IP in the <a
-                href="https://aclanthology.org/2022.argmining-1.1.pdf">paper</a> if you
-            are interested.</p>
+        <h4>Subtask B (IP Classification) Leaderboard</h4>
+        <table style="align-content: center">
+    <thead>
+        <tr>
+            <th>Rank</th>
+        <th>Team Name</th>
+        <th>Affiliation</th>
+        <th>Attempt</th>
+        <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+      <td>1</td>
+      <td>feeds</td>
+      <td>Bauhaus-Universität Weimar</td>
+      <td>1</td>
+      <td>0.5561</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>KPAS</td>
+      <td>Optum</td>
+      <td>1</td>
+      <td>0.5417</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mohammad Soltani</td>
+      <td>Heinrich Heine University</td>
+      <td>5</td>
+      <td>0.5281</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Semantists</td>
+      <td>Institute for Infocomm Research, A*STAR</td>
+      <td>1</td>
+      <td>0.5045</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>ACT-CS</td>
+      <td>Emory University</td>
+      <td>1</td>
+      <td>0.5000</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>IUST</td>
+      <td>Iran University of Science and Technology</td>
+      <td>1</td>
+      <td>0.4609</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>KnowComp</td>
+      <td>The Hong Kong University of Science and Technology</td>
+      <td>1</td>
+      <td>0.3922</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>GC-HUNTER</td>
+      <td>Graduate Center, Hunter College, CUNY</td>
+      <td>1</td>
+      <td>0.3832</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Pitt Pixel Persuaders</td>
+      <td>University of Pittsburgh</td>
+      <td>1</td>
+      <td>0.1217</td>
+    </tr>
 
+    </table>
+        Note: Attempt denotes the best submission attempt; Score denotes F1-score.
+        <br><br>
         <hr>
         <h2 id="scripts to download the data"> 2. Dataset and Shared Task Submission</h2>
         <p>The dataset to download should only be used for participating in the ImageArg Shared Task. Any
