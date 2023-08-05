@@ -83,6 +83,43 @@
             text-align: center;
         }
 
+        .citation-container {
+            position: relative;
+            font-size: smaller;
+         }
+
+        .copy-button {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      padding: 5px;
+      background-color: #f8f8f8;
+      border: 0px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .copy-icon {
+      color: #555;
+    }
+
+    .copy-notice {
+      display: none;
+      position: absolute;
+      top: 8px;
+      color: black;
+      font-size: small;
+      right: 8px;
+      transform: translateX(-0%);
+      background-color: #f8f8f8;
+      padding: 5px;
+      border: 0px solid #ddd;
+      border-radius: 4px;
+    }
+
+
+
+
     </style>
 </head>
 <body>
@@ -618,6 +655,53 @@
           <li>Appendices (Optional)</li>
         </ul>
 
+
+        <p>Please cite the following papers:</p>
+        <div class="citation-container">
+              <pre class="snippet-clipboard-content notranslate position-relative overflow-auto" id="citation1" style="border: 0; padding: 20px">
+@inproceedings{liu-etal-2022-imagearg,
+    title = "{I}mage{A}rg: A Multi-modal Tweet Dataset for Image Persuasiveness Mining",
+    author = "Liu, Zhexiong  and Guo, Meiqi  and Dai, Yue  and Litman, Diane",
+    booktitle = "Proceedings of the 9th Workshop on Argument Mining",
+    month = oct,
+    year = "2022",
+    address = "Online and in Gyeongju, Republic of Korea",
+    publisher = "International Conference on Computational Linguistics",
+    url = "https://aclanthology.org/2022.argmining-1.1",
+    pages = "1--18"
+    }</pre>
+
+              <!-- Copy Button with Copy Icon -->
+              <button class="copy-button" onclick="copyCitation1()">
+                  <i class="copy-icon fas fa-copy"></i>
+              </button>
+
+              <!-- Copy Notice -->
+              <div class="copy-notice" id="copyNotice1">Copied</div>
+          </div>
+
+        <div class="citation-container">
+              <pre class="snippet-clipboard-content notranslate position-relative overflow-auto" id="citation2" style="border: 0; padding: 20px">
+@inproceedings{liu-etal-2023-overview,
+    title = "Overview of the 2023 {I}mage{A}rg Shared Task",
+    author = "Liu, Zhexiong  and Elaraby, Mohamed  and Zhong, Yang  and Litman, Diane",
+    booktitle = "Proceedings of the 10th Workshop on Argument Mining",
+    month = Dec,
+    year = "2023",
+    address = "Online and in Singapore",
+    publisher = "Association for Computational Linguistics"
+    }</pre>
+
+              <!-- Copy Button with Copy Icon -->
+              <button class="copy-button" onclick="copyCitation2()">
+                  <i class="copy-icon fas fa-copy"></i>
+              </button>
+
+              <!-- Copy Notice -->
+              <div class="copy-notice" id="copyNotice2">Copied</div>
+          </div>
+
+
         <p><strong>Paper Format</strong>: <a href="https://2023.emnlp.org/calls/style-and-formatting/">
             EMNLP 2023 style sheets</a>.</p>
         <p><strong>Paper Submission Portal:</strong> TBA.</p>
@@ -727,9 +811,49 @@
 </div>
 <script src="./js/scale.fix.js"></script>
 
+<script src="./js/all.min.js"></script>
+
+  <script>
+    function copyCitation1() {
+      var citationText = document.getElementById("citation1").innerText;
+      var tempElement = document.createElement("textarea");
+      tempElement.value = citationText;
+      document.body.appendChild(tempElement);
+      tempElement.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempElement);
+
+      var notice = document.getElementById("copyNotice1");
+      notice.style.display = "block";
+      setTimeout(function () {
+        notice.style.display = "none";
+      }, 1000); // Hide the notice after 1 second (adjust as needed)
+    }
+  </script>
+
+<script>
+    function copyCitation2() {
+      var citationText = document.getElementById("citation2").innerText;
+      var tempElement = document.createElement("textarea");
+      tempElement.value = citationText;
+      document.body.appendChild(tempElement);
+      tempElement.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempElement);
+
+      var notice = document.getElementById("copyNotice2");
+      notice.style.display = "block";
+      setTimeout(function () {
+        notice.style.display = "none";
+      }, 1000); // Hide the notice after 1 second (adjust as needed)
+    }
+  </script>
 
 <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb">
     <section id="shadow-host-companion"></section>
 </div>
+
+
+
 </body>
 </html>
